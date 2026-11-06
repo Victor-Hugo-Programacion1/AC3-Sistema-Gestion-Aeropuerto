@@ -14,7 +14,7 @@ class Aeropuerto:
     def buscar_vuelo(self, codigo):
 
         for vuelo in self._vuelos:
-            if vuelo._codigo == codigo:
+            if vuelo.get_codigo() == codigo:
                 return vuelo
 
         raise VueloNoDisponibleError()

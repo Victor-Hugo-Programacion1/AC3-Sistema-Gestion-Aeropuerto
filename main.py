@@ -14,7 +14,9 @@ def main():
 
     aeropuerto = Aeropuerto("Aeropuerto Internacional", "Cali")
 
-    avion1 = Avion("HK1234", "Airbus A320", 2)
+    # Se aumenta la capacidad a 3 para poder demostrar
+    # EquipajeExcedidoError y VueloLlenoError por separado.
+    avion1 = Avion("HK1234", "Airbus A320", 3)
     avion2 = Avion("HK5678", "Boeing 737", 3)
 
     vuelo1 = Vuelo("AV001", "Bogotá", avion1)
@@ -70,9 +72,11 @@ def main():
     print("\n=== PRUEBA VUELO LLENO ===")
 
     pasajero4 = Pasajero("Mario López", "3004", "R004", 15)
+    pasajero5 = Pasajero("Laura Díaz", "3005", "R005", 10)
 
     try:
         vuelo1.agregar_pasajero(pasajero4)
+        vuelo1.agregar_pasajero(pasajero5)
 
     except VueloLlenoError as e:
         print(e)

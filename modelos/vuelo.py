@@ -14,6 +14,9 @@ class Vuelo:
         self._piloto = None
         self._tripulacion = []
 
+    def get_codigo(self):
+     return self._codigo
+
     def asignar_piloto(self, piloto):
         self._piloto = piloto
 
