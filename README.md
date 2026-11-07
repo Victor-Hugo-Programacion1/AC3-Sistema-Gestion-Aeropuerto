@@ -137,6 +137,23 @@ cd AC3-Sistema-Gestion-Aeropuerto
 3.	Ejecutar el programa principal.
 python main.py
 
+## Pruebas del Sistema
+
+La ejecución del archivo principal permite comprobar los siguientes casos:
+
+- Demostración de polimorfismo mediante objetos Pasajero, Piloto y Tripulante.
+- Registro correcto de pasajeros en un vuelo.
+- Validación del límite permitido de equipaje.
+- Validación de la capacidad máxima del avión.
+- Búsqueda de vuelos registrados.
+- Manejo de búsqueda de vuelos inexistentes mediante una excepción personalizada.
+
+Para ejecutar las pruebas:
+
+```bash
+python main.py
+```
+
 ## Funcionalidades Implementadas
 
 •	Registro de vuelos.
